@@ -1,0 +1,35 @@
+1.代码提示：
+                （1）node
+                （2）express
+                （3）handlebars（hbs）
+                （4）react
+
+2.TypeScript编辑器【基础规则】设置：
+    （一）module                        // 编译的目标语言
+                （1）es6
+
+    （二）tatget                        // 编译的原始语法（书写中使用语法）
+    （三）noImplictAny  （不允许隐式的Any）
+    （四）sourceMap
+    （五）watch  
+    （六）exclude
+
+    （七）jsx
+                （1）react              // 设置jsx的模式为react
+
+
+3.TypeScript的node_modules：
+    （一）name、version、description
+    （二）main
+    （三）script
+    （四）author、license、
+    （五）dependencies、
+                （1）react
+                （2）react-dom
+                （3）@types/react
+                （4）@types/react-dom
+
+    （六）devDependencies、
+
+
+    
