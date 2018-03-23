@@ -1,0 +1,53 @@
+.flex_row{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_column{
+    display: flex;
+    flex-direction: column;
+}
+
+.fit_width_column_center_div{
+    composes:flex_column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.wrap_height_row_center_div{
+        composes: flex_row;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg_title{
+    background-color: blue     /* 注意，继承，必须是由上往下。父类要写在前面。 */
+   
+}
+
+.title{
+    composes:bg_title;      /* 添加有趣的继承 */
+    /* composes: another from './others.css'; */      /* 支持多继承。很好，非常强大。 */
+    color: red
+  
+}
+
+:global(.title){
+    color:green
+}

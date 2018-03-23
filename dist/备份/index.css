@@ -1,0 +1,19 @@
+/* @value colors : "./colors.css" 
+@value color_1 , color_2 ,color_3 from colors */
+
+.bg_title{
+    background-color: blue     /* 注意，继承，必须是由上往下。父类要写在前面。 */
+    /* background-color: color_1 */
+}
+
+.title{
+    composes:bg_title;      /* 添加有趣的继承 */
+    composes: another from './others.css';      /* 支持多继承。很好，非常强大。 */
+    color: red
+    /* color: color_2 */
+}
+
+:global(.title){
+    color:green
+    /* color: color_3 */
+}
